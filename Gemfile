@@ -47,5 +47,7 @@ gem 'capistrano', '3.1.0'
 gem 'capistrano-bundler', '1.1.4'
 gem 'capistrano-rails', '1.1.3'
 
+# Add this if you're using rbenv
+gem 'capistrano-rbenv', '2.0.3', github: "capistrano/rbenv"
 
 
