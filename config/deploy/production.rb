@@ -1,4 +1,4 @@
-set :production
+set :stage, :production
 
 # Simple Role Syntax
 # ==================
@@ -6,9 +6,9 @@ set :production
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
-role :app, %w{deployer@example.com}
-role :web, %w{deployer@example.com}
-role :db,  %w{deployer@example.com}
+role :app, %w{deployer@45.79.89.99}
+role :web, %w{deployer@45.79.89.99}
+role :db,  %w{deployer@45.79.89.99}
 
 # Extended Server Syntax
 # ======================
@@ -22,11 +22,11 @@ server '45.79.89.99', user: 'deployer', roles: %w{web app}, my_property: :my_val
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
 # you can see them in [net/ssh documentation](http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start)
 # set it globally
-#  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+ set :ssh_options, {
+   keys: %w(/Users/ckrishna/.ssh/id_rsa),
+   forward_agent: true,
+   auth_methods: %w(password)
+ }
 # and/or per server
 # server 'example.com',
 #   user: 'user_name',
