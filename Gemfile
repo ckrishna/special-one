@@ -39,6 +39,8 @@ gem 'spring', group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'newrelic_rpm', '3.12.0.288'
+
 gem 'rails_12factor', '0.0.2', group: :production
 
 
