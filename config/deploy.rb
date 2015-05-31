@@ -23,7 +23,8 @@ set :deploy_to, '/home/deployer/special-one'
 set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+linked_files = Set.new(fetch(:linked_files, [])) # https://github.com/capistrano/rails/issues/52
+linked_files.merge(%w{config/database.yml})
 # set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
