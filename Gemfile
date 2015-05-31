@@ -43,4 +43,9 @@ gem 'newrelic_rpm', '3.12.0.288'
 
 gem 'rails_12factor', '0.0.2', group: :production
 
+gem 'capistrano', '3.1.0'
+gem 'capistrano-bundler', '1.1.4'
+gem 'capistrano-rails', '1.1.3'
+
+
 
