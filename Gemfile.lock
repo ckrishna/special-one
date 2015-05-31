@@ -124,3 +124,6 @@ DEPENDENCIES
   spring
   turbolinks (= 2.5.3)
   uglifier (= 2.7.1)
+
+BUNDLED WITH
+   1.10.2
